@@ -9,6 +9,7 @@ public class ActiveState implements AccountState{
         System.out.println("Account is closed!");
     }
 
+
     public void suspendState(Account account){
         account.setAccountState(new SuspendedState());
         System.out.println("Account is suspended!");
@@ -21,12 +22,13 @@ public class ActiveState implements AccountState{
     public void deposit(Account account, double depositAmount){
         double newBalance = account.getBalance() + depositAmount;
         account.setBalance(newBalance);
-        System.out.println("Deposited " + depositAmount + ". New balance: " + newBalance);
+        //
+        System.out.println("Deposited " + depositAmount + ". New balance: " + newBalance + "\n");
     }
 
     public void withdraw(Account account, double withdrawAmount){
         double newBalance = account.getBalance() - withdrawAmount;
         account.setBalance(newBalance);
-        System.out.println("Withdraw " + withdrawAmount + ". New balance: " + newBalance);
+        System.out.println("Withdraw " + withdrawAmount + ". New balance: " + newBalance + "\n");
     }
 }

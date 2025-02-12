@@ -10,7 +10,7 @@ public class SuspendedState implements AccountState{
     }
 
     public void suspendState(Account account){
-        System.out.println("Account is already suspended!");
+        System.out.println("Account is already suspended!\n");
     }
 
     public void activateState(Account account){
@@ -19,10 +19,10 @@ public class SuspendedState implements AccountState{
     }
 
     public void deposit(Account account, double depositAmount){
-        System.out.println("You cannot deposit on suspended account!");
+        System.out.println("You cannot deposit on suspended account! \n");
     }
 
     public void withdraw(Account account, double withdrawAmount){
-        System.out.println("You cannot withdraw on suspended account!");
+        System.out.println("You cannot withdraw on suspended account! \n");
     }
 }

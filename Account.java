@@ -35,12 +35,12 @@ public class Account {
     }
 
     public void deposit(Double depositAmount){
-        accountState.deposit(this, depositAmount);  // Pass the Account object
+        accountState.deposit(this, depositAmount); 
         System.out.println(toString());
     }
 
     public void withdraw(Double withdrawAmount){
-        accountState.withdraw(this, withdrawAmount);  // Pass the Account object
+        accountState.withdraw(this, withdrawAmount);
         System.out.println(toString());
     }
 
