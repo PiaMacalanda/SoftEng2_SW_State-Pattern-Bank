@@ -9,7 +9,6 @@ public class ActiveState implements AccountState{
         System.out.println("Account is closed!");
     }
 
-
     public void suspendState(Account account){
         account.setAccountState(new SuspendedState());
         System.out.println("Account is suspended!");
