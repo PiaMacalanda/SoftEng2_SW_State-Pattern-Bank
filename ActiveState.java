@@ -20,6 +20,7 @@ public class ActiveState implements AccountState{
     }
 
     public void deposit(Account account, double depositAmount){
+        System.out.println("Current Balance: " + account.getBalance());
         double newBalance = account.getBalance() + depositAmount;
         account.setBalance(newBalance);
         //
