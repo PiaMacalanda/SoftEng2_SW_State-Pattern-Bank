@@ -23,6 +23,5 @@ public class AccountTest {
 
         myAccount.deposit(100.0);
 
-
     }
 }

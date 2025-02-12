@@ -27,6 +27,6 @@ public class ActiveState implements AccountState{
     public void withdraw(Account account, double withdrawAmount){
         double newBalance = account.getBalance() - withdrawAmount;
         account.setBalance(newBalance);
-        System.out.println("Withdraw" + withdrawAmount + ". New balance: " + newBalance);
+        System.out.println("Withdraw " + withdrawAmount + ". New balance: " + newBalance);
     }
 }
